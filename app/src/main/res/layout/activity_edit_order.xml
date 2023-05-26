@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_200"
+    tools:context=".redaction.EditOrder">
+
+    <TextView
+        android:id="@+id/chosenLocation_textViewEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/location_location"
+        android:textColor="@color/red_500"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chooseCategories_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="@string/chooseCategories"
+        android:textColor="@color/red_500"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/locationEditImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseCategories_textView" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/accessoriesEditImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/accessories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseCategories_textView" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/flowersEditImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/flower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseCategories_textView" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/djEditImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/dj"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationEditText" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/photoEditImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accessoriesEditText" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/hostEditImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/host"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flowersEditText" />
+
+    <TextView
+        android:id="@+id/locationEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Локація"
+        android:textColor="@color/red_500"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/locationEditImage"
+        app:layout_constraintEnd_toEndOf="@id/locationEditImage"
+        app:layout_constraintTop_toBottomOf="@id/locationEditImage" />
+
+    <TextView
+        android:id="@+id/accessoriesEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/accessories"
+        android:textColor="@color/red_500"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/accessoriesEditImage"
+        app:layout_constraintEnd_toEndOf="@id/accessoriesEditImage"
+        app:layout_constraintTop_toBottomOf="@id/accessoriesEditImage" />
+
+    <TextView
+        android:id="@+id/flowersEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/flowers"
+        android:textColor="@color/red_500"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/flowersEditImage"
+        app:layout_constraintEnd_toEndOf="@id/flowersEditImage"
+        app:layout_constraintTop_toBottomOf="@id/flowersEditImage" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/dj"
+        android:textColor="@color/red_500"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/djEditImage"
+        app:layout_constraintEnd_toEndOf="@id/djEditImage"
+        app:layout_constraintTop_toBottomOf="@id/djEditImage" />
+
+    <TextView
+        android:id="@+id/photoEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/photographer"
+        android:textColor="@color/red_500"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/photoEditImage"
+        app:layout_constraintEnd_toEndOf="@id/photoEditImage"
+        app:layout_constraintTop_toBottomOf="@id/photoEditImage" />
+
+    <TextView
+        android:id="@+id/hostEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/host"
+        android:textColor="@color/red_500"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/hostEditImage"
+        app:layout_constraintEnd_toEndOf="@id/hostEditImage"
+        app:layout_constraintTop_toBottomOf="@id/hostEditImage" />
+
+    <TextView
+        android:id="@+id/totalPriceEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/total_estimated_price_1_d_new"
+        android:textColor="@color/red_500"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoEditText" />
+
+    <Button
+        android:id="@+id/confirmEditButton"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="@string/edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalPriceEditText" />
+
+    <Button
+        android:id="@+id/deleteOrderButton"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:text="Видалити"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalPriceEditText" />
+
+    <FrameLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red_200"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

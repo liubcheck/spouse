@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomSeekBar" parent="Widget.AppCompat.SeekBar">
+        <item name="android:progressTint">@color/red_500</item>
+        <item name="android:thumbTint">@color/red_500</item>
+    </style>
+</resources>

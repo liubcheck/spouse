@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/red_200"
+    tools:context=".fragment.LocationInfoFragment">
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/location_imageView"
+        android:layout_width="400dp"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:id="@+id/blank_textView0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red_500"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/locationName_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="location"
+        android:textColor="@color/red_500"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/locationDescription_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:textColor="@color/red_500"
+        android:textSize="22sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/blank_textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red_500"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/locationCity_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="City: city"
+        android:textColor="@color/red_500"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/locationAddress_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/address_address"
+        android:textColor="@color/red_500"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/blank_textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red_500"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/chooseLocationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вибрати" />
+
+</LinearLayout>

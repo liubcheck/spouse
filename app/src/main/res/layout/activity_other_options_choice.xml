@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_200"
+    tools:context=".creation.OtherOptionsChoice">
+
+    <TextView
+        android:id="@+id/chosenLocation_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/location_location"
+        android:textColor="@color/red_500"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/otherOptionsChoice_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:text="@string/you_can_complete_your_order"
+        android:textColor="@color/red_500"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chosenLocation_textView" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/dishes_imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/rest"
+        app:layout_constraintEnd_toStartOf="@+id/accessories_imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherOptionsChoice_textView" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/accessories_imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/accessories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherOptionsChoice_textView" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/flowers_imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/flower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/accessories_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/otherOptionsChoice_textView" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/photographers_imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accessories_imageView" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/djs_imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/dj"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dishes_imageView" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/hosts_imageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/host"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/photographers_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/flowers_imageView" />
+
+    <TextView
+        android:id="@+id/dishes_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/partners"
+        android:textColor="@color/red_500"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/dishes_imageView"
+        app:layout_constraintEnd_toEndOf="@id/dishes_imageView"
+        app:layout_constraintTop_toBottomOf="@id/dishes_imageView" />
+
+    <TextView
+        android:id="@+id/accessories_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/accessories"
+        android:textColor="@color/red_500"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/accessories_imageView"
+        app:layout_constraintEnd_toEndOf="@id/accessories_imageView"
+        app:layout_constraintTop_toBottomOf="@id/accessories_imageView" />
+
+    <TextView
+        android:id="@+id/flowers_textView"
+        android:layout_width="60dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/flowers"
+        android:textColor="@color/red_500"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/flowers_imageView"
+        app:layout_constraintEnd_toEndOf="@id/flowers_imageView"
+        app:layout_constraintTop_toBottomOf="@id/flowers_imageView" />
+
+    <TextView
+        android:id="@+id/photographers_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/photographers"
+        android:textColor="@color/red_500"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/photographers_imageView"
+        app:layout_constraintEnd_toEndOf="@id/photographers_imageView"
+        app:layout_constraintTop_toBottomOf="@id/photographers_imageView" />
+
+    <TextView
+        android:id="@+id/djs_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/djs"
+        android:textColor="@color/red_500"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/djs_imageView"
+        app:layout_constraintEnd_toEndOf="@id/djs_imageView"
+        app:layout_constraintTop_toBottomOf="@id/djs_imageView" />
+
+    <TextView
+        android:id="@+id/hosts_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/hosts"
+        android:textColor="@color/red_500"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/hosts_imageView"
+        app:layout_constraintEnd_toEndOf="@id/hosts_imageView"
+        app:layout_constraintTop_toBottomOf="@id/hosts_imageView" />
+
+    <TextView
+        android:id="@+id/totalEstimatedPrice_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="@string/total_estimated_price_1_d"
+        android:textColor="@color/red_500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photographers_textView" />
+
+    <Button
+        android:id="@+id/completeOrder_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/complete_order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalEstimatedPrice_textView" />
+
+    <FrameLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red_200"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

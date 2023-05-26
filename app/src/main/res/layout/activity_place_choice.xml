@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_200"
+    tools:context=".creation.PlaceChoice">
+
+    <TextView
+        android:id="@+id/chosenCity_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/city_city"
+        android:textColor="@color/red_500"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/placeChoice_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/choose_your_celebration_place"
+        android:textColor="@color/red_500"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chosenCity_textView" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/restaurant_imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/restaurant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placeChoice_textView" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/countrysideComplex_imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/countryside_complex"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placeChoice_textView" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/conferenceHall_imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="60dp"
+        android:src="@drawable/conference_hall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/countrysideComplex_textView" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/park_imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/park"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/restaurant_textView" />
+
+    <liubomyr.stepanenko.spouse.model.RoundedImageView
+        android:id="@+id/other_imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/other"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/park_imageView" />
+
+    <TextView
+        android:id="@+id/restaurant_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/restaurant"
+        android:textColor="@color/red_500"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:src="@drawable/kyiv"
+        app:layout_constraintEnd_toEndOf="@id/restaurant_imageView"
+        app:layout_constraintStart_toStartOf="@id/restaurant_imageView"
+        app:layout_constraintTop_toBottomOf="@id/restaurant_imageView" />
+
+    <TextView
+        android:id="@+id/countrysideComplex_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/countryside_complex"
+        android:textColor="@color/red_500"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/countrysideComplex_imageView"
+        app:layout_constraintStart_toStartOf="@id/countrysideComplex_imageView"
+        app:layout_constraintTop_toBottomOf="@id/countrysideComplex_imageView" />
+
+    <TextView
+        android:id="@+id/park_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/park"
+        android:textColor="@color/red_500"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/park_imageView"
+        app:layout_constraintStart_toStartOf="@id/park_imageView"
+        app:layout_constraintTop_toBottomOf="@id/park_imageView" />
+
+    <TextView
+        android:id="@+id/conferenceHall_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/conference_hall"
+        android:textColor="@color/red_500"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/conferenceHall_imageView"
+        app:layout_constraintStart_toStartOf="@id/conferenceHall_imageView"
+        app:layout_constraintTop_toBottomOf="@id/conferenceHall_imageView" />
+
+    <TextView
+        android:id="@+id/other_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/other"
+        android:textColor="@color/red_500"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/other_imageView"
+        app:layout_constraintStart_toStartOf="@id/other_imageView"
+        app:layout_constraintTop_toBottomOf="@id/other_imageView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

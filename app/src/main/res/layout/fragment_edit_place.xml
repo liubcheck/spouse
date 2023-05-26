@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_200"
+    tools:context=".redaction.EditPlaceFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/chosenCity_textViewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/city_city"
+            android:textColor="@color/red_500"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/placeChoice_textViewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/choose_your_celebration_place"
+            android:textColor="@color/red_500"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/chosenCity_textViewEdit" />
+
+        <liubomyr.stepanenko.spouse.model.RoundedImageView
+            android:id="@+id/restaurant_imageViewEdit"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/placeChoice_textViewEdit"
+            android:src="@drawable/restaurant" />
+
+        <liubomyr.stepanenko.spouse.model.RoundedImageView
+            android:id="@+id/countrysideComplex_imageViewEdit"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/placeChoice_textViewEdit"
+            android:src="@drawable/countryside_complex" />
+
+        <liubomyr.stepanenko.spouse.model.RoundedImageView
+            android:id="@+id/conferenceHall_imageViewEdit"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/countrysideComplex_textViewEdit"
+            android:src="@drawable/conference_hall" />
+
+        <liubomyr.stepanenko.spouse.model.RoundedImageView
+            android:id="@+id/park_imageViewEdit"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/restaurant_textViewEdit"
+            android:src="@drawable/park" />
+
+        <liubomyr.stepanenko.spouse.model.RoundedImageView
+            android:id="@+id/other_imageViewEdit"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/park_imageViewEdit"
+            android:src="@drawable/other" />
+
+        <TextView
+            android:id="@+id/restaurant_textViewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/restaurant"
+            android:textColor="@color/red_500"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/restaurant_imageViewEdit"
+            app:layout_constraintStart_toStartOf="@id/restaurant_imageViewEdit"
+            app:layout_constraintTop_toBottomOf="@id/restaurant_imageViewEdit" />
+
+        <TextView
+            android:id="@+id/countrysideComplex_textViewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/countryside_complex"
+            android:textColor="@color/red_500"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/countrysideComplex_imageViewEdit"
+            app:layout_constraintStart_toStartOf="@id/countrysideComplex_imageViewEdit"
+            app:layout_constraintTop_toBottomOf="@id/countrysideComplex_imageViewEdit" />
+
+        <TextView
+            android:id="@+id/park_textViewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/park"
+            android:textColor="@color/red_500"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/park_imageViewEdit"
+            app:layout_constraintStart_toStartOf="@id/park_imageViewEdit"
+            app:layout_constraintTop_toBottomOf="@id/park_imageViewEdit" />
+
+        <TextView
+            android:id="@+id/conferenceHall_textViewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/conference_hall"
+            android:textColor="@color/red_500"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/conferenceHall_imageViewEdit"
+            app:layout_constraintStart_toStartOf="@id/conferenceHall_imageViewEdit"
+            app:layout_constraintTop_toBottomOf="@id/conferenceHall_imageViewEdit" />
+
+        <TextView
+            android:id="@+id/other_textViewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/other"
+            android:textColor="@color/red_500"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/other_imageViewEdit"
+            app:layout_constraintStart_toStartOf="@id/other_imageViewEdit"
+            app:layout_constraintTop_toBottomOf="@id/other_imageViewEdit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

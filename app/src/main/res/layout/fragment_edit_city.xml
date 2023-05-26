@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_200"
+    tools:context=".redaction.EditCityFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/cityChoice_textViewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/choose_your_city"
+            android:textColor="@color/red_500"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <liubomyr.stepanenko.spouse.model.RoundedImageView
+            android:id="@+id/kyiv_imageEdit"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/kyiv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cityChoice_textViewEdit" />
+
+        <liubomyr.stepanenko.spouse.model.RoundedImageView
+            android:id="@+id/lviv_imageEdit"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="40dp"
+            android:src="@drawable/lviv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cityChoice_textViewEdit" />
+
+        <liubomyr.stepanenko.spouse.model.RoundedImageView
+            android:id="@+id/kharkiv_imageEdit"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/kharkiv"
+            app:layout_constraintBottom_toTopOf="@+id/dnipro_imageEdit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/kyiv_imageEdit" />
+
+        <liubomyr.stepanenko.spouse.model.RoundedImageView
+            android:id="@+id/odesa_imageEdit"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/odesa"
+            app:layout_constraintBottom_toTopOf="@+id/dnipro_imageEdit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lviv_imageEdit" />
+
+        <liubomyr.stepanenko.spouse.model.RoundedImageView
+            android:id="@+id/dnipro_imageEdit"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/dnipro"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/kyiv_textViewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kyiv"
+            android:textColor="@color/red_500"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/kyiv_imageEdit"
+            app:layout_constraintEnd_toEndOf="@id/kyiv_imageEdit"
+            app:layout_constraintTop_toBottomOf="@id/kyiv_imageEdit" />
+
+        <TextView
+            android:id="@+id/lviv_textViewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lviv"
+            android:textColor="@color/red_500"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/lviv_imageEdit"
+            app:layout_constraintEnd_toEndOf="@id/lviv_imageEdit"
+            app:layout_constraintTop_toBottomOf="@id/lviv_imageEdit" />
+
+        <TextView
+            android:id="@+id/kharkiv_textViewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kharkiv"
+            android:textColor="@color/red_500"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/kharkiv_imageEdit"
+            app:layout_constraintEnd_toEndOf="@id/kharkiv_imageEdit"
+            app:layout_constraintTop_toBottomOf="@id/kharkiv_imageEdit" />
+
+        <TextView
+            android:id="@+id/odesa_textViewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/odesa"
+            android:textColor="@color/red_500"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/odesa_imageEdit"
+            app:layout_constraintEnd_toEndOf="@id/odesa_imageEdit"
+            app:layout_constraintTop_toBottomOf="@id/odesa_imageEdit" />
+
+        <TextView
+            android:id="@+id/dnipro_textViewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dnipro"
+            android:textColor="@color/red_500"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/dnipro_imageEdit"
+            app:layout_constraintEnd_toEndOf="@id/dnipro_imageEdit"
+            app:layout_constraintTop_toBottomOf="@id/dnipro_imageEdit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
